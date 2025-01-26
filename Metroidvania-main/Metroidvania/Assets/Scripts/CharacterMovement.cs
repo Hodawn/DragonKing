@@ -37,6 +37,8 @@ public class CharacterMovement : MonoBehaviour
     public UnityEvent OnFallEvent;
     public UnityEvent OnLandEvent;
     private CharacterStatus status;
+
+    [SerializeField] private bool isPlayerTwo = false;
     private void Awake()                //컴포넌트들을 가져와서 셋팅한다.
     {
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
